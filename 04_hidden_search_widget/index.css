@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+.input-control{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    background-color: white;
+    height: 50px;
+}
+.input-control input{
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    font-size: 18px;
+    transition: width 0.3s ease;
+}
+.input-control.show-search input{
+    width: 200px;
+}
+.input-control.show-search button{
+    transform: translateX(198px);
+}
+.input-control button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
