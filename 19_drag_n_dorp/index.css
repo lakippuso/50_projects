@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #8e44ad;
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.empty{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 3px solid black;
+    background-color: white;
+}
+.fill {
+    background-image: url('https://picsum.photos/150/150');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+.hold{
+    border: 5px solid #ccc;
+}
+.hovered{
+    background-color: #333;
+    border: 5px dashed #fff;
+}
+@media (max-width: 800px) {
+    body{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

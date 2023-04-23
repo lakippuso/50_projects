@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(102, 102, 235);
+}
+.form{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    border-radius: 6px;
+    color: white;
+}
+.form-header h1{
+    text-align: center;
+    margin: 1rem;
+}
+.form-input{
+    position: relative;
+    height: 3rem;
+}
+.form-input input{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+    height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 10px;
+}
+.form-input label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-input input:focus{
+    border-bottom-color: lightblue;
+}
+
+.form-input input:focus + label span{
+    transform: translateY(-20px);
+    color: lightblue;
+}
+.form-input label{
+    position: absolute;
+    font-size: 1rem;
+    bottom: 10px;
+}
+.form-button,
+.form-button input{
+    width: 100%;
+}
+.form-button input{
+    padding: 1rem;
+    background-color: rgb(130, 162, 248);
+    color: white;
+    outline: none;
+    border: 1px solid rgb(130, 162, 248);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-button input:active{
+    transform: scale(0.98);
+}
+.form-register a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.form-header,
+.form-input,
+.form-button,
+.form-register{
+    margin: 1.3em 0;
+}
